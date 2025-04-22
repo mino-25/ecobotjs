@@ -1,0 +1,99 @@
+/* style.css */
+
+/* Fond et texte de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+/* Zone de réponse */
+#responseBox {
+    padding: 1%;
+    width: 70vw; /* Garder 100% de la largeur de son parent */
+    color: black;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    box-shadow: 0 4px 6px 0 rgba(6, 6, 6, 0.37);
+    backdrop-filter: blur(1px);
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: left; /* Pour que le texte soit aligné à gauche */
+}
+
+/* En-tête */
+
+img{
+    width: 10%;
+}
+
+
+
+/* Formulaire de saisie */
+form {
+    text-align: center;
+}
+
+/* Champ de texte */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Optionnel : si tu veux que les titres soient centrés */
+#responseBox h1,
+#responseBox h2,
+#responseBox h3 {
+    text-align: center;
+}
+
+/* Les textes en <em> restent en italique mais suivent l'alignement gauche */
+#responseBox em {
+    font-style: italic;
+}
+
+/* Style du bouton "Revenir à l'accueil" */
+form button[type="submit"] {
+    margin-top: 20px;
+    background-color: #28d800;
+}
+
+form button[type="submit"]:hover {
+    background-color: #11c3ff;
+}
+
