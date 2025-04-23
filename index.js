@@ -11,7 +11,8 @@
             - Hydrogène Vert<br>
             - Panneaux Solaires Organiques<br>
             - Agriculture Verticale<br>
-            - The Ocean Cleanup
+            - The Ocean Cleanup<br>
+            - Smart Flower <br>
           `,
           "sommaire": `
             📄 <strong>Sommaire :</strong><br>
@@ -25,10 +26,12 @@
           "crédits": `
             👥<strong>Crédit</strong><br><br>
             Sobriété Nmérique : Ezechiel BATCHI<br>
-            Green PC : Ryan MARLIENGEAS<br>
+            Green PC : Ryan MARLIANGEAS<br>
             Hydrogène Verte : Yannick BARUDLINO<br>
-            Panneaux solaires organiques : Emrys Agboton<br>
-            The Ocean Cleanup : Amine Mahi<br>
+            Panneaux solaires organiques : Emrys AGBOTON<br>
+            The Ocean Cleanup : Amine MAHI<br>
+            Argiculture Verte : Selim ALI<br>
+            Smart Flower : Solal RIBEZZO<br>
             Presentateur : EcoBot<br>
             Developpement : Amine Mahi
 
@@ -362,6 +365,61 @@
                 The Ocean Cleanup pourrait jouer un rôle clé dans la régénération des océans, 
                 en parallèle d’une transition vers une économie sans plastique à usage unique.
 
+            `,
+
+
+            "smart flower":`
+                🌱 <strong>Smart Flower</strong><br><br>
+
+                <em>Histoire de l'invention :</em><br>
+                    La SmartFlower a vu le jour en Autriche en 2014.
+                    Son concept repose sur une idée simple mais brillante : <br>
+                    imiter le comportement naturel des tournesols, qui tournent leur tête en suivant la course du soleil. 
+                    Cette technique, appelée « suivi solaire biaxial », permet à la SmartFlower d’optimiser l’angle d’exposition de ses panneaux solaires tout au long de la journée. 
+                    Contrairement aux panneaux classiques installés sur les toits, elle s’installe directement au sol et fonctionne de manière autonome, grâce à un système motorisé intelligent.
+                    Dès son lancement, elle a attiré l’attention pour son design futuriste en forme de fleur et pour son approche innovante de la production d’énergie solaire.
+                    Ce produit est rapidement devenu un symbole de la technologie verte et de la transition énergétique. <br><br>
+
+                <em>Quel problème elle résout :</em><br>
+                La SmartFlower s’attaque à plusieurs problèmes liés à l’énergie solaire.
+                Premièrement, elle résout le manque d’efficacité des panneaux fixes en suivant constamment le soleil, 
+                ce qui augmente le rendement énergétique jusqu’à 40 % par rapport à une installation classique. 
+                Ensuite, elle propose une solution esthétique et accessible pour ceux qui ne peuvent pas ou ne veulent pas installer de panneaux sur leur toit.
+                Elle permet également de sensibiliser le grand public à l'énergie renouvelable grâce à son design original et visible, notamment dans les écoles ou les espaces publics. 
+                Enfin, en réduisant la dépendance aux énergies fossiles, elle contribue à la lutte contre le changement climatique et à la réduction des émissions de gaz à effet de serre.<br><br>
+
+                <em>Progrès de l'invention:</em><br>
+                Depuis sa création, la SmartFlower a connu plusieurs évolutions technologiques.
+                Les modèles récents sont désormais équipés de batteries pour stocker l’énergie produite, rendant la solution encore plus autonome.
+                Certains modèles permettent aussi une gestion à distance via des applications mobiles, facilitant la surveillance et la maintenance.
+                Les matériaux utilisés ont été améliorés pour être plus résistants face aux intempéries, et le mécanisme de suivi solaire a été renforcé pour plus de précision et de fiabilité.
+                 Malgré ces avancées, le coût de l’installation reste relativement élevé, ce qui freine encore sa démocratisation. 
+                 Toutefois, avec les progrès constants dans le domaine du solaire, il est probable que ces technologies deviennent plus abordables dans les années à venir. <br><br>
+            
+                <em>Acteurs majeurs :</em><br>
+                Le principal acteur derrière cette invention est l’entreprise SmartFlower Solar,
+                initialement fondée en Autriche mais aujourd’hui basée aux États-Unis. 
+                Elle est à la fois conceptrice, fabricante et distributrice de cette technologie. 
+                Depuis sa création, la société a noué des partenariats avec des collectivités locales, 
+                des établissements scolaires, des musées et des entreprises soucieuses de leur empreinte carbone.
+                Des installations ont été réalisées dans plusieurs pays du monde, en Europe comme en Amérique, ce qui prouve le rayonnement international de cette innovation. 
+                SmartFlower Solar se positionne comme une entreprise engagée dans la transition énergétique, en mettant la technologie au service de l’écologie et de l’éducation. <br><br>
+
+                <em>Problématiques :</em><br>
+                Malgré ses nombreux avantages, la SmartFlower présente certaines limites. 
+                Le premier obstacle est son prix : entre 15 000 et 25 000 euros selon les options,
+                ce qui reste un investissement important, même pour les foyers sensibilisés à l’écologie.
+                Elle nécessite également un espace dégagé d’environ 5 mètres de diamètre pour s’ouvrir correctement et suivre le soleil sans obstruction. 
+                En cas de vents violents ou de tempêtes, bien que la fleur se replie automatiquement, il reste un risque de dysfonctionnement ou de dégradation. 
+                De plus, l’installation sur les toitures est compliquée voire déconseillée dans les régions exposées aux intempéries, ce qui limite son utilisation dans certains contextes urbains. 
+                Enfin, comme toute innovation, elle manque encore de notoriété auprès du grand public, ce qui freine son développement. <br><br>
+
+                <em>Vision dans le futur :</em><br>
+                La SmartFlower a un avenir prometteur dans le domaine des énergies renouvelables. 
+                Avec l’évolution des matériaux, la baisse progressive des coûts de production et une meilleure intégration dans les politiques publiques, elle pourrait devenir une alternative courante aux installations solaires traditionnelles. 
+                Son design unique en fait un outil parfait pour sensibiliser les citoyens, notamment les jeunes générations, aux enjeux climatiques. 
+                Elle pourrait également être déployée à grande échelle dans les villes, les parcs, les campus universitaires ou les zones isolées où les besoins en énergie autonome sont importants. 
+                Dans le futur, la SmartFlower pourrait symboliser une nouvelle façon de produire de l’énergie propre, intelligente et intégrée à l’environnement urbain ou naturel. 
             `,
 
         };
