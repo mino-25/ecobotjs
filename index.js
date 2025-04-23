@@ -13,6 +13,7 @@
             - Agriculture Verticale<br>
             - The Ocean Cleanup<br>
             - Smart Flower <br>
+            - Informatique Écoénergétique
           `,
           "sommaire": `
             📄 <strong>Sommaire :</strong><br>
@@ -33,6 +34,7 @@
             Argiculture Verte : Selim ALI<br>
             Smart Flower : Solal RIBEZZO<br>
             Presentateur : EcoBot<br>
+            Informatique Écoénergétique : Curtis LATOUCHE<br>
             Developpement : Amine Mahi
 
 
@@ -438,8 +440,8 @@
 
 
 
-            "hydrogène vert":`
-                🌱 <strong>Hydrogène Vert</strong><br><br>
+            "informatique écoénergétique":`
+                🌱 <strong>L’Informatique Écoénergétique</strong><br><br>
 
                 <em>Histoire de l'invention :</em><br>
                     L’informatique écoénergétique est née du besoin de concevoir des technologies informatiques moins énergivores
