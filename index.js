@@ -309,6 +309,10 @@
             `,
 
 
+
+
+
+
             "the ocean cleanup":`
                 🌱 <strong>The Ocean Cleanup</strong><br><br>
 
@@ -368,6 +372,10 @@
             `,
 
 
+
+
+
+
             "smart flower":`
                 🌱 <strong>Smart Flower</strong><br><br>
 
@@ -421,6 +429,57 @@
                 Elle pourrait également être déployée à grande échelle dans les villes, les parcs, les campus universitaires ou les zones isolées où les besoins en énergie autonome sont importants. 
                 Dans le futur, la SmartFlower pourrait symboliser une nouvelle façon de produire de l’énergie propre, intelligente et intégrée à l’environnement urbain ou naturel. 
             `,
+
+
+
+
+
+
+
+
+
+            "hydrogène vert":`
+                🌱 <strong>Hydrogène Vert</strong><br><br>
+
+                <em>Histoire de l'invention :</em><br>
+                    L’informatique écoénergétique est née du besoin de concevoir des technologies informatiques moins énergivores
+                    en réponse à la montée en flèche de la consommation énergétique des data centers.
+                    Depuis les années 2010, les chercheurs explorent des alternatives aux architectures traditionnelles,
+                    comme l’informatique optique (basée sur la lumière plutôt que l’électricité) et l’informatique neuromorphique 
+                    (s’inspirant du fonctionnement du cerveau humain). 
+                    Ces approches sont devenues des axes majeurs de recherche à partir des années 2020.<br><br>
+
+                <em>Quel problème elle résout :</em><br>
+                Elle vise à réduire l’empreinte carbone des infrastructures informatiques, 
+                notamment les centres de données, en diminuant leur consommation d’énergie. 
+                Cela répond à la fois à des enjeux environnementaux (réchauffement climatique) et économiques (coûts de l’énergie).<br><br>
+
+                <em>Progrès de l'invention:</em><br>
+                Des avancées importantes ont été faites en recherche fondamentale. 
+                Des prototypes d’ordinateurs optiques et de puces neuromorphiques existent déjà (ex : puces Loihi d’Intel). 
+                Cependant, l’adoption à grande échelle reste en développement, 
+                principalement dans les laboratoires de recherche et certaines applications spécifiques 
+                (intelligence artificielle, robotique, etc.).<br><br>
+            
+                <em>Acteurs majeurs :</em><br>
+                    • IBM, Intel, et Google pour les puces neuromorphiques et les supercalculateurs écoénergétiques.<br>
+                    • Lightmatter et Lightelligence pour l’informatique optique.<br>
+                    • Des universités comme Stanford, MIT ou EPFL jouent aussi un rôle central dans la recherche.<br><br>
+
+                <em>Problématiques :</em><br>
+                • Coût élevé des nouvelles technologies.<br>
+                • Difficulté d’intégration dans les systèmes existants.<br>
+                • Manque de standardisation.<br>
+                • Technologies encore émergentes, parfois instables ou peu optimisées pour l’usage industriel courant.<br><br>
+
+                <em>Vision dans le futur :</em><br>
+                À long terme, l’informatique écoénergétique pourrait devenir le standard des systèmes informatiques, 
+                surtout avec l’explosion de la demande en IA et en cloud computing. 
+                On s’attend à des centres de données autosuffisants, 
+                alimentés par des énergies renouvelables et utilisant des architectures plus intelligentes et écoresponsables.
+
+            `,
+
 
         };
       
