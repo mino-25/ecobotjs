@@ -5,12 +5,20 @@
             Les nouvelles technologies peuvent-elles sauver la planète ?
           `,
           "introduction": `
-            🤖 <strong>Introduction :</strong><br>
-            On le voit partout aujourd’hui : les problèmes écologiques sont au cœur des discussions. Dans les journaux, sur les réseaux sociaux, dans nos familles, on parle de réchauffement climatique, de pollution, de catastrophes naturelles… Et, très souvent, ce qui ressort, c’est une vision plutôt négative. Beaucoup de gens se disent que c’est trop tard, que la planète est fichue, et que nos gestes quotidiens ne changeront pas grand-chose.
-            En plus, l’écologie est parfois perçue comme une contrainte. On nous répète qu’il faut consommer moins, renoncer à certaines habitudes, réduire nos déplacements, bref… faire des sacrifices. Résultat : pour une partie de la population, agir pour l’environnement, ça rime surtout avec restrictions et pertes de confort.
-            Mais est-ce vraiment la seule façon de voir les choses ? De plus en plus d’innovations montrent qu’on peut penser autrement. Et si, au lieu d’être un frein, la technologie pouvait justement devenir une alliée pour relever ces défis ? Après tout, si le progrès a contribué à créer des problèmes, pourquoi ne pourrait-il pas aussi nous aider à les résoudre ?
-            C’est justement ce qu’on va explorer ensemble à travers cette question : les nouvelles technologies peuvent-elles sauver la planète ? Et plutôt que de tomber dans le défaitisme, nous allons voir qu’il existe bel et bien des solutions qui ouvrent des perspectives d’avenir.
+            🌍 <strong>Introduction</strong><br><br>
+            Aujourd’hui, les questions écologiques occupent une place centrale dans nos vies : médias, débats politiques, discussions quotidiennes. Pourtant, le constat est souvent négatif : catastrophes climatiques, sentiment d’impuissance, sacrifices imposés. Beaucoup finissent par voir l’écologie uniquement sous l’angle des contraintes et des renoncements.<br><br>
+            Mais est-ce vraiment la seule façon de concevoir l’avenir ? Et si la technologie, souvent critiquée pour son rôle dans les dérèglements, devenait aussi un levier pour inventer des solutions durables ?<br><br>
+            C’est dans cette perspective que nous posons notre problématique : <em>« Les nouvelles technologies peuvent-elles sauver la planète ? »</em><br><br>
+            Plutôt que de céder au défaitisme, nous allons explorer les pistes innovantes qui ouvrent la voie à une écologie plus optimiste et tournée vers le progrès.
           `,
+          "conclusion": `
+            🌱 <strong>Conclusion</strong><br><br>
+            Nous avons commencé par rappeler que l’écologie est souvent perçue sous un prisme négatif : contraintes, sacrifices et sentiment d’impuissance. Pourtant, à travers différentes innovations, nous avons découvert qu’une autre voie existe : une écologie qui ne signifie pas seulement « faire moins », mais aussi « faire mieux » grâce à la créativité et à l’ingéniosité humaines.<br><br>
+            La technologie, bien sûr, n’est pas une solution miracle. Elle doit être accompagnée de changements collectifs et individuels. Mais utilisée de manière responsable, elle peut devenir un formidable levier pour transformer nos modes de vie et construire un avenir plus durable.<br><br>
+            La vraie question n’est donc pas seulement : <em>« Les technologies peuvent-elles sauver la planète ? »</em>, mais aussi : <em>« Sommes-nous prêts à les utiliser intelligemment pour y parvenir ? »</em><br><br>
+            L’avenir dépend des choix que nous faisons aujourd’hui. Plutôt que de subir, choisissons d’agir et de croire en un progrès qui rime avec respect de l’environnement.
+          `,
+
           "solutions": `
             💡 Les solutions (tapez leur nom pour plus d'infos) :<br>
             - Sobriété numérique<br>
