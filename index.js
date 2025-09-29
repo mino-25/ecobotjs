@@ -4,6 +4,13 @@
             🌍 <strong>La problématique de notre projet :</strong><br>
             Les nouvelles technologies peuvent-elles sauver la planète ?
           `,
+          "introduction": `
+            🤖 <strong>Introduction :</strong><br>
+            On le voit partout aujourd’hui : les problèmes écologiques sont au cœur des discussions. Dans les journaux, sur les réseaux sociaux, dans nos familles, on parle de réchauffement climatique, de pollution, de catastrophes naturelles… Et, très souvent, ce qui ressort, c’est une vision plutôt négative. Beaucoup de gens se disent que c’est trop tard, que la planète est fichue, et que nos gestes quotidiens ne changeront pas grand-chose.
+            En plus, l’écologie est parfois perçue comme une contrainte. On nous répète qu’il faut consommer moins, renoncer à certaines habitudes, réduire nos déplacements, bref… faire des sacrifices. Résultat : pour une partie de la population, agir pour l’environnement, ça rime surtout avec restrictions et pertes de confort.
+            Mais est-ce vraiment la seule façon de voir les choses ? De plus en plus d’innovations montrent qu’on peut penser autrement. Et si, au lieu d’être un frein, la technologie pouvait justement devenir une alliée pour relever ces défis ? Après tout, si le progrès a contribué à créer des problèmes, pourquoi ne pourrait-il pas aussi nous aider à les résoudre ?
+            C’est justement ce qu’on va explorer ensemble à travers cette question : les nouvelles technologies peuvent-elles sauver la planète ? Et plutôt que de tomber dans le défaitisme, nous allons voir qu’il existe bel et bien des solutions qui ouvrent des perspectives d’avenir.
+          `,
           "solutions": `
             💡 Les solutions (tapez leur nom pour plus d'infos) :<br>
             - Sobriété numérique<br>
