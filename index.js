@@ -503,20 +503,52 @@
         const form = document.getElementById("form");
         const input = document.getElementById("question");
         const responseBox = document.getElementById("responseBox");
-      
-        form.addEventListener("submit", function(e) {
+
+        const typeSpeed = 12;
+        function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
+
+        // Type HTML while preserving tags (tags are appended instantly)
+        async function typeHTML(el, html){
+          el.innerHTML = '';
+          let i = 0;
+          while (i < html.length){
+            if (html[i] === '<'){
+              const close = html.indexOf('>', i);
+              if (close === -1) { el.innerHTML += html.slice(i); break; }
+              el.innerHTML += html.slice(i, close+1);
+              i = close + 1;
+            } else {
+              el.innerHTML += html[i];
+              i++;
+              await sleep(typeSpeed + Math.random() * 20);
+            }
+          }
+        }
+
+        form.addEventListener("submit", async function(e) {
           e.preventDefault();
           const cmd = input.value.trim().toLowerCase();
-      
+
           if (responses[cmd]) {
-            responseBox.innerHTML = responses[cmd];
+            await typeHTML(responseBox, responses[cmd]);
           } else {
-            responseBox.innerHTML = `
-              ❌ Commande inconnue.<br>
-              Tape : <strong>problématique</strong>, <strong>solutions</strong>, <strong>sommaire</strong>, <strong>crédits</strong>, ou un mot-clé comme <strong>sobriété numérique</strong>.
-            `;
+            await typeHTML(responseBox, `❌ Commande inconnue.<br>Tape : <strong>problématique</strong>, <strong>solutions</strong>, <strong>sommaire</strong>, <strong>crédits</strong>, ou un mot-clé comme <strong>sobriété numérique</strong>.`);
           }
-      
+
           input.value = ""; // Reset input
         });
+
+        // Command-click functionality intentionally disabled to avoid interfering with form submission behavior.
+        // If you prefer clickable commands, I can add a controlled handler that calls the same typing function without dispatching a submit event.
+
+        // initial friendly message
+        (async () => {
+          await sleep(600);
+          await typeHTML(responseBox, "EcoBot prêt. Tape une commande comme <strong>problématique</strong> ou <strong>solutions</strong>.");
+        })();
+
+        // subtle cursor-width variation for the terminal feel (matches CSS .cursor)
+        const cursor = document.querySelector('.cursor');
+        if (cursor){ setInterval(()=>{ cursor.style.width = Math.random() > 0.82 ? '4px' : '10px'; }, 700); }
+
 

@@ -1,77 +1,135 @@
-/* style.css */
-
-/* Fond et texte de base */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start; /* let content grow downward */
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
 }
-
 .container {
-    margin: 20px auto;
-    padding: 20px;
     max-width: 900px;
+    width: 80vw;
+    height: auto; /* allow variable height */
+    margin-top: 28px;
+}
+.crt-screen {
+    position: relative;
+    width: 100%;
+    height: auto; /* variable height */
+    max-height: 90vh; /* prevent excessive overflow */
+    border: 4px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 18px rgba(0, 255, 0, 0.18);
+    background-color: rgba(0, 20, 0 , 0.85);
+    overflow: auto;
 }
 
-h1 {
-    text-align: center;
-    color: black;
+/* CRT scanlines moved into the scrolling content so they follow long messages */
+.terminal-text { position: relative; padding: 20px; }
+.terminal-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 255, 0, 0.06) 0.1em,
+    transparent 0.1em);
+    background-size: 100% 0.2em;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.9;
+}
+/* Keep terminal text above the scanlines */
+.terminal-text > * { position: relative; z-index: 1; }
+
+/* Flicker animation */
+@keyframes flicker {
+    0%{ opacity: 0.95; }
+    5%{ opacity: 0.9; }
+    10%{ opacity: 0.85; }
+    15%{ opacity: 0.92; }
+    20%{ opacity: 0.98; }
+    25%{ opacity: 1; }
+    100%{ opacity: 1; }
+}
+.crt-screen::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 255, 0, 0.03);
+    animation: flicker 0.15s infinite;
+    pointer-events: none;
 }
 
-/* Zone de réponse */
+.terminal-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
+    color: #0f0;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #0f0;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Glow */
+.glow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at center, 
+    rgba(0, 255, 0, 0.18) 0%,
+    rgba(0, 255, 0, 0.06) 45%,
+    rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+/* Response box as terminal output */
 #responseBox {
-    padding: 1%;
-    width: 70vw; /* Garder 100% de la largeur de son parent */
-    color: black;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #ffffff, #ffffff);
-    box-shadow: 0 4px 6px 0 rgba(6, 6, 6, 0.37);
-    backdrop-filter: blur(1px);
-    margin-top: 30px;
+    padding: 12px;
+    width: 100%;
+    color: #0f0;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.0);
+    margin-top: 18px;
     font-size: 15px;
-    text-align: left; /* Pour que le texte soit aligné à gauche */
+    text-align: left;
 }
 
-/* En-tête */
+/* Logo */
+.logo{ display:block; margin: 0 auto 8px; width: 8%; }
 
-img{
-    width: 10%;
-}
+/* Commands list (labels only, non-interactive) */
+.commands{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; padding:0; margin:8px 0 12px;}
+.commands li{ list-style:none; color:#8fff8f; padding:6px 10px; border-radius:6px; border:1px solid rgba(0,255,0,0.06); cursor:default; background: transparent; }
+.commands li:hover{ background: transparent; color:#8fff8f; }
+
+/* Form */
+form{ text-align:center; margin-top:8px; }
+input[type="text"]{ padding:10px; font-size:16px; width:320px; border-radius:5px; border:1px solid rgba(15,255,15,0.15); background: rgba(0,0,0,0.1); color: #caffca }
+input[type="text"]::placeholder{ color: #6fbf6f }
+button{ padding:10px 20px; font-size:16px; border-radius:5px; border:none; background-color:#103310; color:#a8f5a8; cursor:pointer }
+button:hover{ background-color:#285f28 }
 
 
 
-/* Formulaire de saisie */
-form {
-    text-align: center;
-}
 
-/* Champ de texte */
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #e7e7e7;
-}
-
-/* Boutons */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+/* Removed duplicate legacy form/button styles to preserve the CRT look defined above */
 
 
 
@@ -94,6 +152,6 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #11c3ff;
+    background-color: #143500;
 }
 
