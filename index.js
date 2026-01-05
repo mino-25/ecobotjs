@@ -532,7 +532,7 @@
           if (responses[cmd]) {
             await typeHTML(responseBox, responses[cmd]);
           } else {
-            await typeHTML(responseBox, `❌ Commande inconnue.<br>Tape : <strong>problématique</strong>, <strong>solutions</strong>, <strong>sommaire</strong>, <strong>crédits</strong>, ou un mot-clé comme <strong>sobriété numérique</strong>.`);
+            await typeHTML(responseBox, `❌ Commande inconnue.<br>Tapez : <strong>problématique</strong>, <strong>solutions</strong>, <strong>sommaire</strong>, <strong>crédits</strong>, ou un mot-clé comme <strong>sobriété numérique</strong>.`);
           }
 
           input.value = ""; // Reset input
@@ -544,7 +544,7 @@
         // initial friendly message
         (async () => {
           await sleep(600);
-          await typeHTML(responseBox, "EcoBot prêt. Tape une commande comme <strong>problématique</strong> ou <strong>solutions</strong>.");
+          await typeHTML(responseBox, "EcoBot prêt. Tapez une commande comme <strong>problématique</strong> ou <strong>solutions</strong>.");
         })();
 
         // subtle cursor-width variation for the terminal feel (matches CSS .cursor)

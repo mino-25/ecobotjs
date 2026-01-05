@@ -10,7 +10,6 @@ body{
 }
 .container {
     max-width: 900px;
-    width: 80vw;
     height: auto; /* allow variable height */
     margin-top: 28px;
 }
@@ -27,7 +26,11 @@ body{
 }
 
 /* CRT scanlines moved into the scrolling content so they follow long messages */
-.terminal-text { position: relative; padding: 20px; }
+.terminal-text {
+    position: relative;
+    padding: 20px; 
+    overflow-x: hidden;
+}
 .terminal-text::before {
     content: '';
     position: absolute;
