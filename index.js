@@ -543,6 +543,18 @@
 
         // initial friendly message
         (async () => {
+          // Type the intro (logo/title/etc.) using the same typeHTML function
+          const introEl = document.getElementById('intro');
+          if (introEl) {
+            const introHTML = introEl.innerHTML;
+            introEl.innerHTML = '';
+            await sleep(400);
+            await typeHTML(introEl, introHTML);
+            // hide the intro cursor after typing completes
+            const introCursor = introEl.querySelector('.intro-cursor');
+            if (introCursor) introCursor.style.display = 'none';
+          }
+
           await sleep(600);
           await typeHTML(responseBox, "EcoBot prêt. Tapez une commande comme <strong>problématique</strong> ou <strong>solutions</strong>.");
         })();
