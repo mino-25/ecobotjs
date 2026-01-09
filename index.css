@@ -218,7 +218,7 @@ body{
 /* Form */
 form{ text-align:center; margin-top:8px; }
 input[type="text"]{ padding:10px; font-size:16px; width:320px; border:1px solid rgba(15,255,15,0.15); background: rgba(0,0,0,0.1); color: #caffca; font-family: 'Courier New', Courier, monospace; }
-input[type="text"]::placeholder{ color: #6fbf6f; font-family: 'Courier New', Courier, monospace;}
+input[type="text"]::placeholder{color: #6fbf6f; font-family: 'Courier New', Courier, monospace;}
 button{ padding:10px 20px; font-size:16px; border-radius:0px; border:none; background-color:#103310; color:#a8f5a8; cursor:pointer; font-family: 'Courier New', Courier, monospace; }
 button:hover{ background-color:#285f28 }
 

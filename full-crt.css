@@ -1,0 +1,56 @@
+/* Fullscreen CRT stylesheet — isolated from the original index.css
+   This file intentionally centers a CRT-style terminal and stretches it to the full viewport. */
+:root{
+  --crt-bg: rgba(0,20,0,0.93);
+  --crt-accent: #0f0;
+}
+html,body{height:100%;margin:0;padding:0;background:#000;font-family:'Courier New', Courier, monospace;color:var(--crt-accent);}
+/* Make the CRT fill the entire viewport */
+.crt-screen.fullscreen{
+  position:fixed;
+  inset:0; /* top:0;left:0;right:0;bottom:0 */
+  display:flex;
+  align-items:flex-start; /* allow intro then responses */
+  justify-content:center;
+  background: radial-gradient(circle at 50% 30%, rgba(0,255,0,0.02) 0%, rgba(0,0,0,0.7) 45%), var(--crt-bg);
+  padding:40px 20px;
+  box-sizing:border-box;
+  overflow:auto;
+}
+/* Terminal content: constrain width for readability but allow full height */
+.terminal-text{
+  width:min(1200px, 95%);
+  max-width:1200px;
+  min-height:60vh;
+  background:transparent;
+  padding:18px;
+  box-sizing:border-box;
+  position:relative;
+  z-index:1;
+}
+/* Keep logo smaller here */
+.logo{display:block;margin:0 auto 12px;width:7%;}
+.commands{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:0;margin:8px 0 12px;}
+.commands li{list-style:none;color:#8fff8f;padding:6px 10px;border-radius:6px;border:1px solid rgba(0,255,0,0.06);}
+input[type="text"]{padding:10px;font-size:16px;width:320px;border:1px solid rgba(15,255,15,0.12);background:rgba(0,0,0,0.12);color:#caffca;font-family:'Courier New',Courier,monospace}
+button{padding:10px 20px;font-size:16px;border-radius:0;border:none;background-color:#103310;color:#a8f5a8;cursor:pointer}
+button:hover{background-color:#285f28}
+#responseBox{padding:12px;width:100%;color:var(--crt-accent);border-radius:6px;background:transparent;margin-top:18px;font-size:15px;text-align:left}
+/* scanlines and flicker — keep the CRT aesthetic */
+.crt-screen.fullscreen::before{
+  content:'';
+  position:fixed; /* cover viewport */
+  inset:0;
+  background: linear-gradient(rgba(0,255,0,0.04) 0.12em, transparent 0.12em);
+  background-size:100% 0.24em;
+  pointer-events:none;
+  z-index:0;
+  opacity:0.95;
+}
+@keyframes flicker{0%{opacity:0.98}8%{opacity:0.92}12%{opacity:0.94}18%{opacity:0.99}100%{opacity:1}}
+.crt-screen.fullscreen::after{content:' ';position:fixed;inset:0;background:rgba(0,255,0,0.02);animation:flicker 0.14s infinite;pointer-events:none}
+.cursor{display:inline-block;width:10px;height:20px;background-color:var(--crt-accent);animation:blink 1s step-end infinite;vertical-align:middle;margin-left:6px}
+@keyframes blink{from,to{opacity:1}50%{opacity:0}}
+.glow{position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center, rgba(0,255,0,0.12) 0%, rgba(0,255,0,0.04) 45%, rgba(0,0,0,0) 70%);pointer-events:none}
+/* Make content readable on small screens */
+@media (max-width:520px){.terminal-text{padding:12px;min-height:50vh}input[type="text"]{width:100%}}
