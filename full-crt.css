@@ -4,12 +4,19 @@
   --crt-bg: rgba(0,20,0,0.93);
   --crt-accent: #0f0;
 }
+@font-face {
+  font-family: 'UpHeavtt';
+  src: url(./fonts/upheavtt.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 html,body{height:100%;margin:0;padding:0;background:#000;font-family:'Courier New', Courier, monospace;color:var(--crt-accent);}
 /* Make the CRT fill the entire viewport */
 .crt-screen.fullscreen{
   position:fixed;
   inset:0; /* top:0;left:0;right:0;bottom:0 */
   display:flex;
+  flex-direction: column;
   align-items:flex-start; /* allow intro then responses */
   justify-content:center;
   background: radial-gradient(circle at 50% 30%, rgba(0,255,0,0.02) 0%, rgba(0,0,0,0.7) 45%), var(--crt-bg);
@@ -27,8 +34,13 @@ html,body{height:100%;margin:0;padding:0;background:#000;font-family:'Courier Ne
   box-sizing:border-box;
   position:relative;
   z-index:1;
-}
+}  
 /* Keep logo smaller here */
+h1{
+  margin: 0 auto 12px;
+  font-family: 'UpHeavtt', sans-serif;
+  font-size:56px;
+}
 .logo{display:block;margin:0 auto 12px;width:7%;}
 .commands{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:0;margin:8px 0 12px;}
 .commands li{list-style:none;color:#8fff8f;padding:6px 10px;border-radius:6px;border:1px solid rgba(0,255,0,0.06);}
