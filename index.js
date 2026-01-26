@@ -9,7 +9,7 @@
             Aujourd’hui, les questions écologiques occupent une place centrale dans nos vies : médias, débats politiques, discussions quotidiennes. Pourtant, le constat est souvent négatif : catastrophes climatiques, sentiment d’impuissance, sacrifices imposés. Beaucoup finissent par voir l’écologie uniquement sous l’angle des contraintes et des renoncements.<br><br>
             Mais est-ce vraiment la seule façon de concevoir l’avenir ? Et si la technologie, souvent critiquée pour son rôle dans les dérèglements, devenait aussi un levier pour inventer des solutions durables ?<br><br>
             C’est dans cette perspective que nous posons notre problématique : <em>« Les nouvelles technologies peuvent-elles sauver la planète ? »</em><br><br>
-            Plutôt que de céder au défaitisme, nous allons explorer les pistes innovantes qui ouvrent la voie à une écologie plus optimiste et tournée vers le progrès.
+            Plutôt que de céder au defaitisme, nous allons explorer les pistes innovantes qui ouvrent la voie à une écologie plus optimiste et tournée vers le progrès.
           `,
           "conclusion": `
             🌱 <strong>Conclusion</strong><br><br>
